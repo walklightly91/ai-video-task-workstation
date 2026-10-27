@@ -1,0 +1,32 @@
+# PyTorch is installed first by seed_vc_runtime.py from the official CPU/CUDA
+# index.  Do not add a nightly build or a second conflicting trio here.
+accelerate==1.15.0
+scipy==1.13.1
+librosa==0.10.2
+huggingface-hub==2.2.0
+munch==4.0.0
+einops==0.8.0
+descript-audio-codec==1.0.0
+# VideoTaskHub invokes inference.py directly and does not use Seed-VC's
+# standalone Gradio WebUI.  Keeping Gradio here would impose pillow<13.0 and
+# reintroduce the unpatched image-decoder dependency into the inference venv.
+pydub==0.25.1
+resemblyzer==0.1.4
+jiwer==3.0.3
+transformers==5.20.1
+FreeSimpleGUI==5.1.1
+soundfile==0.12.1
+sounddevice==0.5.0
+modelscope==1.27.0
+funasr==1.1.5
+numpy==1.26.4
+# Security floor: fixes the known Pillow <=12.3.0 decoder vulnerabilities.
+pillow==13.0.0
+# Security floor: 1.3.8 fixes GHSA-mwj6-rfh8-7qf4 and GHSA-wf6j-7hvr-gr93
+# (Hydra instantiate policy bypasses). Keep the stable 1.3 line to avoid an unvalidated major
+# configuration-runtime change in Seed-VC.
+hydra-core==1.3.8
+pyyaml==6.0.3
+python-dotenv==1.2.4
+urllib3==2.8.0
+werkzeug==3.1.9
