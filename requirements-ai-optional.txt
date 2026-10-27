@@ -1,0 +1,8 @@
+# Optional local-model dependencies.
+# These are not installed in the current verified .venv. They are pinned so that
+# an explicit optional install remains reproducible. Install them only when their corresponding
+# local GGUF / CN-CLIP functions are needed, then package from that same .venv.
+# A failure here must not block the basic application, cloud AI, FFmpeg or VLC features.
+
+llama-cpp-python==0.3.36
+cn-clip==1.6.0

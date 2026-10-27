@@ -1,0 +1,15 @@
+# Base runtime dependencies verified in this project's Python 3.11 virtual environment.
+# These cover the desktop UI, spreadsheet/file workflows, image handling and VLC Python binding.
+requests==2.34.2
+urllib3==2.8.0
+PyQt6==6.11.0
+PyAutoGUI==0.9.54
+pyperclip==1.11.0
+Pillow==13.0.0
+opencv-python==5.0.0.93
+Markdown==3.10.3
+pandas==3.0.5
+openpyxl==3.1.5
+numpy==2.4.6
+python-vlc==3.0.21203
+Send2Trash==1.8.3

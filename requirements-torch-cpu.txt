@@ -1,0 +1,7 @@
+# Verified CPU Torch set for the current Windows / Python 3.11 build environment.
+# Keep this trio in lockstep.  PyTorch 2.11.0 is the current security baseline
+# selected for this workstation and has an official CPython 3.11 Windows wheel.
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0
+torchvision==0.26.0
+torchaudio==2.11.0

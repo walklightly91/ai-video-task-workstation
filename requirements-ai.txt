@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+# AI runtime dependencies verified in this project's Python 3.11 virtual environment.
+# Install requirements-base.txt and the matching Torch file first.
+faster-whisper==1.2.1
+ctranslate2==4.8.1
+librosa==0.11.0
+soundfile==0.14.0
+transformers==5.20.1
+accelerate==1.15.0
+safetensors==0.8.0
+sentence-transformers==5.7.0
+qwen-vl-utils==0.0.14
+nvidia-ml-py==13.610.43
+# Security floor for the indirect Hugging Face/Torch filesystem dependency.
+fsspec==2026.9.0
+# Seed-VC 的 SFTP/SSH 媒体来源按需安装 Paramiko，不阻断主程序安装。

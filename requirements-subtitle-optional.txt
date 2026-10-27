@@ -1,0 +1,13 @@
+# Optional mature subtitle stack. WhisperX is installed only after the user selects
+# a high-precision alignment model and explicitly accepts its license notice in the UI.
+# Model weights are never downloaded before that confirmation. Keep the final release
+# lockfile generated from a tested environment together with THIRD_PARTY_NOTICES.md.
+
+# WhisperX 3.8.6 (the current upstream release) pins huggingface-hub<1.0.0
+# and therefore cannot share this application's secured Transformers 5.x
+# runtime.  It is deliberately not listed here: installing it into the main
+# environment would downgrade the security baseline.  Keep it isolated until
+# upstream publishes a compatible release.
+
+# MIT: robust SRT / ASS / SSA / VTT read-write support
+pysubs2==1.8.1
